@@ -12,7 +12,7 @@ cp -r sdk-$VERSION/runtime/include/* ../
 cd ..
 rm -rf target
 rm -rf BUILD.gn
-git tag $VERSION
 git add .
+git tag $VERSION
 git commit -am "reload $VERSION"
 git push --tags -f

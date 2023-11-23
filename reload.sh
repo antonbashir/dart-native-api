@@ -11,6 +11,7 @@ unzip -q $VERSION.zip
 cp -r sdk-$VERSION/runtime/include/* ../
 cd ..
 rm -rf target
+rm -rf bin
 rm -rf BUILD.gn
 git add .
 git tag $VERSION
